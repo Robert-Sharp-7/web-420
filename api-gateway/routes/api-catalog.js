@@ -12,3 +12,9 @@ auth_controller.user_register);
 router.get('/auth/token',
 auth_controller.user_token);
 module.exports = router;
+
+//allows user login requests
+router.post('/auth/login', auth_controller.user_login);
+
+//allows user logout requests
+router.get('/auth/logout', auth_controller.user_logout);
